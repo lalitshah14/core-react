@@ -1,0 +1,102 @@
+.App {
+  text-align: center;
+}
+.app-header {
+  background-color: #4267b2;
+  border-bottom: 1px solid #29487d;
+  display: flex;
+  justify-content: space-between;
+}
+.app-header h1 {
+  margin: 5px;
+}
+.app-header li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 5px;
+}
+.app-header a {
+  color: #fff;
+  text-decoration: none;
+}
+.main-contnent {
+  position: relative;
+  height: 80vh;
+  margin-top: 10px;
+}
+.main-contnent > div {
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #dddfe2;
+  padding: 15px;
+  margin: 0px 12px;
+  border-radius: 5px;
+}
+.main-contnent .sidebar {
+  width: 31%;
+}
+.main-contnent .content {
+  width: 60%;
+  right: 0;
+}
+
+/* Styles for sidebar */
+.sidebar div.question-progress-blocks {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.sidebar div.question-progress-blocks span {
+  border: 1px solid #eee;
+  border-radius: 3px;
+  width: 9%;
+  text-align: center;
+  line-height: 1.5em;
+  background-color: #effbff;
+}
+.sidebar div.question-progress-blocks span.current {
+  background-color: antiquewhite;
+}
+.sidebar div.question-progress-blocks span.wrong {
+  background-color: salmon;
+}
+.sidebar div.question-progress-blocks span.correct {
+  background-color: aquamarine;
+}
+.sidebar span.appStats {
+  padding: 10px 0;
+  width: 100%;
+  display: block;
+  font-size: 1em;
+  text-align: center;
+  color: navy;
+}
+.sidebar .sidebar-heading {
+  font-size: 2em;
+  text-align: center;
+  background-color: #e9ebee;
+  color: #29487d;
+  border: 2px solid #29487d;
+  margin: 0px;
+  padding: 0.5em;
+}
+
+/* CSS for main content */
+.content .questionBox {
+  font-size: 2em;
+  margin: 14px 0;
+}
+.answerBlocks .answerBlock {
+  padding: 0.5em 0;
+  font-size: 1.5em;
+}
+.content input.submitBtn {
+  margin: 10px 0;
+  width: 100%;
+  background-color: #4267b2;
+  border-color: #29487d;
+  padding: 0.2em;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 2em;
+}

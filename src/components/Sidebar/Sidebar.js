@@ -15,10 +15,10 @@ const sidebar = props => {
           } else if (question.result === true) {
             classes.push('correct');
           }
-          return(<span 
+          return(<div 
             className={classes.join('')} 
             key={index}>{index+1}
-          </span>);
+          </div>);
         })}
       </div>
       <span className="appStats">Your Stats: {props.totalCorrectAnswers+'/'+props.currentQuestion}</span>
